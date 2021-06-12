@@ -1,0 +1,58 @@
+<html>
+  <head>
+    <link rel="stylesheet"href="./day5.css">
+  </head>
+  <body>
+     <script>
+       function add(){
+  var z=parseInt(document.getElementById("a").value);
+  var y=parseInt(document.getElementById("b").value);
+  var x = y + z;
+document.getElementById("result").innerHTML = x;
+}
+function sub(){
+  var y=parseInt(document.getElementById("a").value);
+  var z=parseInt(document.getElementById("b").value);
+ var x = y-z;
+document.getElementById("result").innerHTML = x;
+}
+function div(){
+  var xx=parseInt(document.getElementById("a").value);
+  var yy=parseInt(document.getElementById("b").value);
+  var x = xx/yy;
+document.getElementById("result").innerHTML = x;
+}
+function mul(){
+  var xx=parseInt(document.getElementById("a").value);
+  var yy=parseInt(document.getElementById("b").value);
+  var x = yy*xx;
+document.getElementById("result").innerHTML = x;
+}
+</script>
+    <h2 style="text-align:center;">  Calculator</h2>
+    <div class="one"><h2>enter 1st no.</h2>
+      <input type="text" id="a" name="valueone"> 
+      </input>
+    
+    </div>
+    
+    <div class="line">
+      </div>
+  
+  
+  
+    <div class="two"><h2>enter 2st no.</h2>
+       <input type="text" id="b" name="valuetwo"> 
+      </input>
+    </div>
+       <div class="line2">
+      </div>
+    
+     <button onclick="add()" Id="add-btn">Add</button>
+    <button onclick="sub()" Id="sub-btn">Sub</button>
+    <button onclick="mul()" Id="mul-btn">Mul</button>
+    <button onclick="div()" Id="div-btn">Div</button>
+ 
+<p id="result"></p>
+  </body>
+</html>
